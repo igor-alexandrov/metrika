@@ -3,7 +3,10 @@ METRIKA_PATH = File.dirname(__FILE__) + '/metrika/'
 require METRIKA_PATH + 'helpers'
 require METRIKA_PATH + 'ext'
 
-require METRIKA_PATH + 'api/methods'
+require METRIKA_PATH + 'api/counters'
+require METRIKA_PATH + 'api/goals'
+require METRIKA_PATH + 'api/statistics'
+
 require METRIKA_PATH + 'client'
 require METRIKA_PATH + 'errors'
 

@@ -3,11 +3,11 @@ Metrika
 
 Wrapper for Yandex.Metrika API
 
-### Info
+# Info
 
 **Under heavy development!**
 
-### Usage
+# JSON API
 
     c = Metrika::Client.new('your_app_id', 'your_app_password')
 
@@ -25,3 +25,7 @@ Wrapper for Yandex.Metrika API
     c.update_counter(id, params)
     c.delete_counter(id)
     c.check_counter(id)
+
+# Object API    
+
+Later…

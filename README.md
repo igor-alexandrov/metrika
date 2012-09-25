@@ -3,6 +3,10 @@ Metrika
 
 Wrapper for Yandex.Metrika API
 
+### Info
+
+**Under heavy development!**
+
 ### Usage
 
     c = Metrika::Client.new('your_app_id', 'your_app_password')

@@ -53,7 +53,7 @@ module Metrika
       end
 
       def get_counter_goal(counter_id, id)
-        self.get(self.counter_goal_path(counter_id, id))['goal']        
+        self.get(self.counter_goal_path(counter_id, id))['goal']
       end      
 
       def update_counter_goal(counter_id, id, params)
@@ -66,6 +66,17 @@ module Metrika
 
       def counter_goal_path(counter_id, id)
         "/counter/#{counter_id}/goal/#{id}"
+      end
+
+      # Statistics
+      def get_counter_stat_traffic_summary(id, params = {})
+        params = self.format_params(params)
+        
+        self.get(self.counter_stat_traffic_summary_path, params.merge(:id => id))
+      end
+
+      def counter_stat_traffic_summary_path
+        "/stat/traffic/summary"
       end
     end
   end

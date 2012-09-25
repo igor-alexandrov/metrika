@@ -3,6 +3,8 @@ Metrika
 
 Wrapper for Yandex.Metrika API
 
+Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedin).
+
 # Info
 
 **Under heavy development!**
@@ -25,6 +27,17 @@ Wrapper for Yandex.Metrika API
     c.update_counter(id, params)
     c.delete_counter(id)
     c.check_counter(id)
+
+    #goals
+    c.get_counter_goals(counter_id)
+    c.create_counter_goal(counter_id, params)
+    c.create_counter_goal(counter_id, params)
+    c.get_counter_goal(counter_id, id)
+    c.update_counter_goal(counter_id, id, params)
+    c.delete_counter_goal(counter_id, id)
+
+    #stats
+    c.get_counter_stat_traffic_summary(1131265, :group => :month, :date1 => Date.parse('20110925'), :date2 => Date.today)
 
 # Object API    
 

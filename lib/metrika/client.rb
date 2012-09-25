@@ -1,8 +1,6 @@
 module Metrika
   class Client
-    include Helpers::Authorization
-    include Helpers::Request
-    include Helpers::Parser
+    include Helpers    
 
     include Api::Methods
 
@@ -10,5 +8,9 @@ module Metrika
       @application_id = application_id
       @application_password = application_password
     end
+
+  protected
+    
+
   end
 end

@@ -1,8 +1,7 @@
-METRIKA_PATH = File.dirname(__FILE__) + "/metrika/"
+METRIKA_PATH = File.dirname(__FILE__) + '/metrika/'
 
-require METRIKA_PATH + 'helpers/authorization'
-require METRIKA_PATH + 'helpers/parser'
-require METRIKA_PATH + 'helpers/request'
+require METRIKA_PATH + 'helpers'
+require METRIKA_PATH + 'ext'
 
 require METRIKA_PATH + 'api/methods'
 require METRIKA_PATH + 'client'

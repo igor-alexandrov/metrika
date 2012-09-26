@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "metrika"
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Igor Alexandrov"]
-  s.date = "2012-09-25"
+  s.date = "2012-09-26"
   s.email = "igor.alexandrov@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -24,7 +24,9 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/metrika.rb",
-    "lib/metrika/api/methods.rb",
+    "lib/metrika/api/counters.rb",
+    "lib/metrika/api/goals.rb",
+    "lib/metrika/api/statistics.rb",
     "lib/metrika/client.rb",
     "lib/metrika/errors.rb",
     "lib/metrika/ext.rb",

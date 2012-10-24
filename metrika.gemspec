@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "metrika"
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Igor Alexandrov"]
-  s.date = "2012-09-26"
+  s.date = "2012-10-24"
   s.email = "igor.alexandrov@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    ".travis.yml",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -25,7 +26,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/metrika.rb",
     "lib/metrika/api/counters.rb",
-    "lib/metrika/api/goals.rb",
+    "lib/metrika/api/resources.rb",
     "lib/metrika/api/statistics.rb",
     "lib/metrika/client.rb",
     "lib/metrika/errors.rb",
@@ -34,8 +35,8 @@ Gem::Specification.new do |s|
     "lib/metrika/helpers/authorization.rb",
     "lib/metrika/helpers/request.rb",
     "metrika.gemspec",
-    "test/helper.rb",
-    "test/test_metrika.rb"
+    "spec/cases/metrika_spec.rb",
+    "spec/helper.rb"
   ]
   s.homepage = "http://github.com/igor-alexandrov/metrika"
   s.licenses = ["MIT"]
@@ -51,14 +52,14 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<yajl-ruby>, [">= 0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.1.5"])
+      s.add_development_dependency(%q<bundler>, ["~> 1.2.1"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
     else
       s.add_dependency(%q<oauth2>, [">= 0"])
       s.add_dependency(%q<yajl-ruby>, [">= 0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
-      s.add_dependency(%q<bundler>, ["~> 1.1.5"])
+      s.add_dependency(%q<bundler>, ["~> 1.2.1"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
     end
   else
@@ -66,7 +67,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<yajl-ruby>, [">= 0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
-    s.add_dependency(%q<bundler>, ["~> 1.1.5"])
+    s.add_dependency(%q<bundler>, ["~> 1.2.1"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
   end
 end

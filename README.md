@@ -15,11 +15,25 @@ Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedi
 
 ## Usage – JSON API
 
+### Authentication
+
+Yandex's API uses Oauth for authentication. Luckily, the Yandex gem hides most of the details from you.
+
+If you have never used Metrika API or you want to change your authentication credentials or your authorization token expired, then you should create new one:
+    
+    require 'rubygems'
+    require 'metrika'
+
+    # get your API credentials at https://oauth.yandex.ru/
     c = Metrika::Client.new('your_app_id', 'your_app_password')
 
-    # if you don't have token yet
     c.authorization_url
+    => "https://oauth.yandex.ru/authorize?response_type=code&client_id=<your_app_id>"
+
+    # follow authrization url and you will be redirected to callback url, specified in your application settings with authorization code in params
+    # user authorization code from params to get authrization token
     c.authorize_token('authorization_code')
+
 
     # if you alredy have token
     c.restore_token('token_code')

@@ -86,13 +86,15 @@ If you want to restore previously used authrization token, it is done easily too
 
 Statistics is the most wonderful part of Yandex.Metrika and it is fully available in Metrika gem.
 
+#### Traffic
+
     c.get_counter_stat_traffic_summary(1131265, :group => :month, :date1 => Date.parse('20110925'), :date2 => Date.today)
 
 ## Usage – Object API    
 
-Later…
+Under development…
 
-## Note on Patches/Pull Requests
+## Note on Patches / Pull Requests
 
 * Fork the project.
 * Make your feature addition or bug fix.

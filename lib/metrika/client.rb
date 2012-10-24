@@ -3,9 +3,7 @@ module Metrika
     include Helpers    
 
     include Api::Counters
-    include Api::Goals
-    include Api::Filters
-    include Api::Operations
+    include Api::Resources
     include Api::Statistics
 
     def initialize(application_id = Metrika.application_id, application_password = Metrika.application_password)

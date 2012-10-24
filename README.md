@@ -11,7 +11,7 @@ Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedi
 
 ## Installation
 
-[sudo] gem install linkedin
+    [sudo] gem install linkedin
 
 ## Usage – JSON API
 

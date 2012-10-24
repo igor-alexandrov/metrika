@@ -25,36 +25,65 @@ If you have never used Metrika API or you want to change your authentication cre
     require 'metrika'
 
     # get your API credentials at https://oauth.yandex.ru/
-    c = Metrika::Client.new('your_app_id', 'your_app_password')
+    client = Metrika::Client.new('your_app_id', 'your_app_password')
 
-    c.authorization_url
-    => "https://oauth.yandex.ru/authorize?response_type=code&client_id=<your_app_id>"
+    client.authorization_url
+     => "https://oauth.yandex.ru/authorize?response_type=code&client_id=<your_app_id>"
 
-    # follow authrization url and you will be redirected to callback url, specified in your application settings with authorization code in params
-    # user authorization code from params to get authrization token
-    c.authorize_token('authorization_code')
+    # follow the authrization url
+    # you will be redirected to the callback url, specified in your application settings
+    # user authorization code from params to get authorization token
+    client.authorize_token(params[:code])
 
+    # if no error is raised then you are free to use any API method
 
-    # if you alredy have token
-    c.restore_token('token_code')
+If you want to restore previously used authrization token, it is done easily too:
 
-    # counters
-    c.get_counters
-    c.creater_counter(params)
-    c.get_counter(id)
-    c.update_counter(id, params)
-    c.delete_counter(id)
-    c.check_counter(id)
+    require 'rubygems'
+    require 'metrika'
 
-    #goals
-    c.get_counter_goals(counter_id)
-    c.create_counter_goal(counter_id, params)
-    c.create_counter_goal(counter_id, params)
-    c.get_counter_goal(counter_id, id)
-    c.update_counter_goal(counter_id, id, params)
-    c.delete_counter_goal(counter_id, id)
+    # get your API credentials at https://oauth.yandex.ru/
+    client = Metrika::Client.new('your_app_id', 'your_app_password')
 
-    #stats
+    client.restore_token('token_code')
+
+### Counters
+        
+    client.get_counters
+    client.creater_counter(params)
+    client.get_counter(id)
+    client.update_counter(id, params)
+    client.delete_counter(id)
+    client.check_counter(id)
+
+### Goals, filters, operations, grants
+
+    client.get_counter_goals(counter_id)
+    client.create_counter_goal(counter_id, params)
+    client.get_counter_goal(counter_id, id)
+    client.update_counter_goal(counter_id, id, params)
+    client.delete_counter_goal(counter_id, id)
+
+    client.get_counter_filters(counter_id)
+    client.create_counter_filter(counter_id, params)    
+    client.get_counter_filter(counter_id, id)
+    client.update_counter_filter(counter_id, id, params)
+    client.delete_counter_filter(counter_id, id)
+
+    client.get_counter_operations(counter_id)
+    client.create_counter_operation(counter_id, params)    
+    client.get_counter_operation(counter_id, id)
+    client.update_counter_operation(counter_id, id, params)
+    client.delete_counter_operation(counter_id, id)
+
+    client.get_counter_grants(counter_id)
+    client.create_counter_grant(counter_id, params)    
+    client.get_counter_grant(counter_id, id)
+    client.update_counter_grant(counter_id, id, params)
+    client.delete_counter_grant(counter_id, id)
+
+### Statistics
+
     c.get_counter_stat_traffic_summary(1131265, :group => :month, :date1 => Date.parse('20110925'), :date2 => Date.today)
 
 ## Usage – Object API    

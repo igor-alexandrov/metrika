@@ -2,18 +2,18 @@
 [![Dependency Status](https://gemnasium.com/igor-alexandrov/metrika.png)](http://gemnasium.com/igor-alexandrov/metrika)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/igor-alexandrov/metrika)
 
-Metrika
-=======
+# Metrika
 
-Wrapper for Yandex.Metrika API
+Wrapper for [Yandex.Metrika](http://metrika.yandex.ru/) API. Gem provides easy-to-use methods to work with counters, goals, filters, operations, grants and statistics.
 
 Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedin).
 
-# Info
 
-**Under heavy development!**
+## Installation
 
-# JSON API
+[sudo] gem install linkedin
+
+## Usage – JSON API
 
     c = Metrika::Client.new('your_app_id', 'your_app_password')
 
@@ -43,6 +43,6 @@ Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedi
     #stats
     c.get_counter_stat_traffic_summary(1131265, :group => :month, :date1 => Date.parse('20110925'), :date2 => Date.today)
 
-# Object API    
+## Usage – Object API    
 
 Later…

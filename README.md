@@ -8,11 +8,11 @@ Wrapper for [Yandex.Metrika (RU)](http://metrika.yandex.ru/) API. Gem provides e
 
 Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedin).
 
-[What is Metrika? (RU)](http://help.yandex.ru/metrika/)
-[What is Metrika? (EN)](http://help.yandex.com/metrika/)
+* [What is Metrika? (RU)](http://help.yandex.ru/metrika/)
+* [What is Metrika? (EN)](http://help.yandex.com/metrika/)
 
-[API Documentation (RU)](http://api.yandex.ru/metrika/doc/ref/concepts/About.xml)
-[API Documentation (EN)](http://api.yandex.com/metrika/doc/ref/concepts/About.xml)
+* [API Documentation (RU)](http://api.yandex.ru/metrika/doc/ref/concepts/About.xml)
+* [API Documentation (EN)](http://api.yandex.com/metrika/doc/ref/concepts/About.xml)
 
 ## Installation
 

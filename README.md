@@ -4,11 +4,15 @@
 
 # Metrika
 
-Wrapper for [Yandex.Metrika](http://metrika.yandex.ru/) API. Gem provides easy-to-use methods to work with counters, goals, filters, operations, grants and statistics.
+Wrapper for [Yandex.Metrika (RU)](http://metrika.yandex.ru/) API. Gem provides easy-to-use methods to work with counters, goals, filters, operations, grants and statistics.
 
 Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedin).
 
-[API Documentation](http://api.yandex.ru/metrika/doc/ref/concepts/About.xml)
+[What is Metrika? (RU)](http://help.yandex.ru/metrika/)
+[What is Metrika? (EN)](http://help.yandex.com/metrika/)
+
+[API Documentation (RU)](http://api.yandex.ru/metrika/doc/ref/concepts/About.xml)
+[API Documentation (EN)](http://api.yandex.com/metrika/doc/ref/concepts/About.xml)
 
 ## Installation
 

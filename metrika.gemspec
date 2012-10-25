@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "metrika"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Igor Alexandrov"]
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
-    ".document",
+    ".rspec",
     ".travis.yml",
     "Gemfile",
     "Gemfile.lock",
@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
     "lib/metrika/helpers/authorization.rb",
     "lib/metrika/helpers/request.rb",
     "metrika.gemspec",
+    "spec/cases/metrika/authorization_spec.rb",
     "spec/cases/metrika_spec.rb",
     "spec/helper.rb"
   ]

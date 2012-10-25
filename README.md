@@ -86,10 +86,58 @@ If you want to restore previously used authrization token, it is done easily too
 ### Statistics
 
 Statistics is the most wonderful part of Yandex.Metrika and it is fully available in Metrika gem.
+All statistics reports support :date1 and :date2 parameters among other parameters.
 
 **Traffic**
 
-    c.get_counter_stat_traffic_summary(1131265, :group => :month, :date1 => Date.parse('20110925'), :date2 => Date.today)
+    client.get_counter_stat_traffic_summary(counter_id, :group => :month, :date1 => Date.parse('20110925'), :date2 => Date.today)
+    client.get_counter_stat_traffic_deepness(counter_id, :date1 => Date.parse('20110925'), :date2 => Date.today)
+    client.get_counter_stat_traffic_hourly(counter_id, params)
+    client.get_counter_stat_traffic_load(counter_id, params)
+
+**Sources**
+
+    client.get_counter_stat_sources_summary(counter_id, params)
+    client.get_counter_stat_sources_sites(counter_id, params)
+    client.get_counter_stat_sources_search_engines(counter_id, params)
+    client.get_counter_stat_sources_phrases(counter_id, params)
+    client.get_counter_stat_sources_marketing(counter_id, params)
+    client.get_counter_stat_sources_direct_summary(counter_id, params)
+    client.get_counter_stat_sources_direct_platforms(counter_id, params)
+    client.get_counter_stat_sources_direct_regions(counter_id, params)
+    client.get_counter_stat_sources_tags(counter_id, params)
+
+**Content**
+        
+    client.get_counter_stat_content_popular(counter_id, params)
+    client.get_counter_stat_content_entrance(counter_id, params)
+    client.get_counter_stat_content_exit(counter_id, params)
+    client.get_counter_stat_content_titles(counter_id, params)
+    client.get_counter_stat_content_url_param(counter_id, params)
+    client.get_counter_stat_content_user_vars(counter_id, params)
+    client.get_counter_stat_content_ecommerce(counter_id, params)
+
+**Geo**
+
+    client.get_counter_stat_geo(counter_id, params)
+
+**Demography**
+
+    client.get_counter_stat_demography_age_gender(counter_id, params)
+    client.get_counter_stat_demography_structure(counter_id, params)
+
+**Tech**    
+    
+    client.get_counter_stat_tech_browsers(counter_id, params)
+    client.get_counter_stat_tech_os(counter_id, params)
+    client.get_counter_stat_tech_display(counter_id, params)
+    client.get_counter_stat_tech_mobile(counter_id, params)
+    client.get_counter_stat_tech_flash(counter_id, params)
+    client.get_counter_stat_tech_silverlight(counter_id, params)
+    client.get_counter_stat_tech_dotnet(counter_id, params)
+    client.get_counter_stat_tech_java(counter_id, params)
+    client.get_counter_stat_tech_cookies(counter_id, params)
+    client.get_counter_stat_tech_javascript(counter_id, params)    
 
 ## Usage – Object API    
 

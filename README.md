@@ -127,7 +127,7 @@ All statistics reports support :date1 and :date2 parameters among other paramete
     client.get_counter_stat_demography_structure(counter_id, params)
 
 **Tech**    
-    
+
     client.get_counter_stat_tech_browsers(counter_id, params)
     client.get_counter_stat_tech_os(counter_id, params)
     client.get_counter_stat_tech_display(counter_id, params)
@@ -156,4 +156,4 @@ Under development…
 
 ## Copyright
 
-Copyright (c) 2009-11 [Igor Alexandrov](http://igor-alexandrov.github.com/). See LICENSE for details.
+Copyright (c) 2012 [Igor Alexandrov](http://igor-alexandrov.github.com/). See LICENSE for details.

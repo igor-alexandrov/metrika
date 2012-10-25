@@ -8,6 +8,7 @@ Wrapper for [Yandex.Metrika](http://metrika.yandex.ru/) API. Gem provides easy-t
 
 Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedin).
 
+[API Documentation](http://api.yandex.ru/metrika/doc/ref/concepts/About.xml)
 
 ## Installation
 

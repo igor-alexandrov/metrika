@@ -9,7 +9,7 @@ Wrapper for [Yandex.Metrika (RU)](http://metrika.yandex.ru/) API. Gem provides e
 **What is Metrika?**
 
 * [Russian](http://help.yandex.ru/metrika/)
-* [English)](http://help.yandex.com/metrika/)
+* [English](http://help.yandex.com/metrika/)
 
 **API Documentation**
 
@@ -20,7 +20,7 @@ Inspired by [Wynn Netherland's LinkedIn Gem](https://github.com/pengwynn/linkedi
 
 ## Installation
 
-    [sudo] gem install linkedin
+    [sudo] gem install metrika
 
 ## Usage – JSON API
 

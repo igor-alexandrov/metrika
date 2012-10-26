@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-metrika.yandex.ru/counters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/x-yametrika+json
+      Content-Type:
+      - application/x-yametrika+json
+      Authorization:
+      - Bearer 926b254ca2f24869999a3d404a01f616
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "UHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3JlLCBtYXgtYWdlPTAsIG11c3QtcmV2YWxpZGF0
+        ZQ==
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        RnJpLCAyNiBPY3QgMjAxMiAwODoxOToxMyBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hlLzIuMg==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC15YW1ldHJpa2EranNvbg==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJjb3VudGVycyI6W3siY29kZV9zdGF0dXMiOiJDU19PSyIsIm5hbWUiOm51
+        bGwsInBlcm1pc3Npb24iOiJvd24iLCJzaXRlIjoid3d3LnJlcXVlc3RiaWxs
+        aW5nLmNvbSIsInR5cGUiOiJzaW1wbGUiLCJpZCI6MjM3OTkxLCJvd25lcl9s
+        b2dpbiI6Imlnb3ItYWxleGFuZHJvdiJ9LHsiY29kZV9zdGF0dXMiOiJDU19F
+        UlJfQ09OTkVDVCIsIm5hbWUiOiJraXJpbGwiLCJwZXJtaXNzaW9uIjoib3du
+        Iiwic2l0ZSI6ImtpcmlsbC5ydSIsInR5cGUiOiJzaW1wbGUiLCJpZCI6MTcz
+        MzYwMDUsIm93bmVyX2xvZ2luIjoiaWdvci1hbGV4YW5kcm92In0seyJjb2Rl
+        X3N0YXR1cyI6IkNTX0VSUl9DT05ORUNUIiwibmFtZSI6ImtpcmlsbCIsInBl
+        cm1pc3Npb24iOiJvd24iLCJzaXRlIjoia2lyaWxsLnVhIiwidHlwZSI6InNp
+        bXBsZSIsImlkIjoxNzMxNjUwMiwib3duZXJfbG9naW4iOiJpZ29yLWFsZXhh
+        bmRyb3YifSx7ImNvZGVfc3RhdHVzIjoiQ1NfT0siLCJuYW1lIjoiU3VwZXJp
+        bmZvcm0gLSDQutC+0YDQv9C+0YDQsNGC0LjQstC90YvQuSIsInBlcm1pc3Np
+        b24iOiJ2aWV3Iiwic2l0ZSI6InN1cGVyaW5mb3JtLnJ1IiwidHlwZSI6InNp
+        bXBsZSIsImlkIjoxMTMxMjY1LCJvd25lcl9sb2dpbiI6ImluZm9saW8tc2Vv
+        In0seyJjb2RlX3N0YXR1cyI6IkNTX09LIiwibmFtZSI6IlN1cGVyaW5mb3Jt
+        IC0g0JvQsNCz0LXRgNGPIiwicGVybWlzc2lvbiI6InZpZXciLCJzaXRlIjoi
+        Y2FtcHMuc3VwZXJpbmZvcm0ucnUiLCJ0eXBlIjoic2ltcGxlIiwiaWQiOjEx
+        MzEyNzAsIm93bmVyX2xvZ2luIjoiaW5mb2xpby1zZW8ifSx7ImNvZGVfc3Rh
+        dHVzIjoiQ1NfT0siLCJuYW1lIjoiU3VwZXJpbmZvcm0gLSDQntCx0YPRh9C1
+        0L3QuNC1IiwicGVybWlzc2lvbiI6InZpZXciLCJzaXRlIjoiZWR1Y2F0aW9u
+        LnN1cGVyaW5mb3JtLnJ1IiwidHlwZSI6InNpbXBsZSIsImlkIjoxNjE2Mzc5
+        LCJvd25lcl9sb2dpbiI6ImluZm9saW8tc2VvIn0seyJjb2RlX3N0YXR1cyI6
+        IkNTX0VSUl9DT05ORUNUIiwibmFtZSI6InRlc3QiLCJwZXJtaXNzaW9uIjoi
+        b3duIiwic2l0ZSI6Ind3dy50ZXN0LnJ1IiwidHlwZSI6InNpbXBsZSIsImlk
+        IjoxNzI5MTcxMywib3duZXJfbG9naW4iOiJpZ29yLWFsZXhhbmRyb3YifSx7
+        ImNvZGVfc3RhdHVzIjoiQ1NfT0siLCJuYW1lIjoid3d3LnNkZWxraS5ydSIs
+        InBlcm1pc3Npb24iOiJvd24iLCJzaXRlIjoid3d3LnNkZWxraS5ydSIsInR5
+        cGUiOiJzaW1wbGUiLCJpZCI6MTUwNjgxMSwib3duZXJfbG9naW4iOiJpZ29y
+        LWFsZXhhbmRyb3YifV19
+    http_version: 
+  recorded_at: Fri, 26 Oct 2012 08:19:15 GMT
+recorded_with: VCR 2.2.5

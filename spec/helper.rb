@@ -20,7 +20,6 @@ end
 APPLICATION_ID = '663576cbd55948a4ae45424fb508ef97'
 APPLICATION_PASSWORD = 'fc2f76dc877e41a4a6cbe78d73faff85'
 
-# ACCESS_TOKEN = '926b254ca2f24869999a3d404a01f616'
 token_file = File.expand_path('../.access_token', __FILE__)
 if File.exists?(token_file)
   ACCESS_TOKEN = File.read(token_file).strip

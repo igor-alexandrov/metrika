@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "metrika"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Igor Alexandrov"]
-  s.date = "2012-10-26"
+  s.date = "2012-10-28"
   s.email = "igor.alexandrov@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE",
@@ -38,7 +38,10 @@ Gem::Specification.new do |s|
     "spec/cases/metrika/authorization_spec.rb",
     "spec/cases/metrika/counters_spec.rb",
     "spec/cases/metrika_spec.rb",
+    "spec/fixtures/cassettes/counter_237991.yml",
+    "spec/fixtures/cassettes/counter_237992.yml",
     "spec/fixtures/cassettes/counters.yml",
+    "spec/fixtures/cassettes/non_existent_counter.yml",
     "spec/helper.rb"
   ]
   s.homepage = "http://github.com/igor-alexandrov/metrika"

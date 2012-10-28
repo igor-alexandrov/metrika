@@ -12,7 +12,7 @@ module Metrika
     class UnauthorizedError      < MetrikaError; end
     class GeneralError           < MetrikaError; end
     class AccessDeniedError      < MetrikaError; end
-    class NoTokenError           < StandardError; end
-    class NotFoundError          < StandardError; end
+    class NoTokenError           < MetrikaError; end
+    class NotFoundError          < MetrikaError; end
   end
 end

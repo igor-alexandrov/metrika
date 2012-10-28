@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-metrika.yandex.ru/counter/non_existent_counter
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/x-yametrika+json
+      Content-Type:
+      - application/x-yametrika+json
+      Authorization:
+      - Bearer 926b254ca2f24869999a3d404a01f616
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: !binary |-
+        Tm90IEZvdW5k
+    headers:
+      !binary "UHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3JlLCBtYXgtYWdlPTAsIG11c3QtcmV2YWxpZGF0
+        ZQ==
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMCBHTVQ=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAyOCBPY3QgMjAxMiAxMDowNjowOCBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hlLzIuMg==
+      !binary "TGFzdC1Nb2RpZmllZA==":
+      - !binary |-
+        V2VkLCAxNCBNYXIgMjAxMiAxMTo0NjoyMSBHTVQ=
+      !binary "RXRhZw==":
+      - !binary |-
+        ImExMTRiLTM4LTRiYjMyODYzMTlkNDAi
+      !binary "QWNjZXB0LVJhbmdlcw==":
+      - !binary |-
+        Ynl0ZXM=
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NzA=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7PxMLQzMTBR8MsvUXDLL81LsdEHinCFZKQqFKUWlqYWl6Sm
+        AFnF+aVFyakKeUBVaSBVXABtZ1XKOAAAAA==
+    http_version: 
+  recorded_at: Sun, 28 Oct 2012 10:06:08 GMT
+recorded_with: VCR 2.2.5

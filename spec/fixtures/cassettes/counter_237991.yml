@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-metrika.yandex.ru/counter/237991
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/x-yametrika+json
+      Content-Type:
+      - application/x-yametrika+json
+      Authorization:
+      - Bearer 926b254ca2f24869999a3d404a01f616
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Date:
+      - Sun, 28 Oct 2012 10:06:07 GMT
+      Server:
+      - Apache/2.2
+      Content-Type:
+      - application/x-yametrika+json
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! '{"counter":{"code_options":{"denial":0,"clickmap":0,"async":0,"informer":{"color_arrow":1,"color_start":"FFFFFFFF","color_text":0,"size":3,"allowed":0,"color_end":"EFEFEFFF","indicator":"pageviews","type":"ext","enabled":0},"track_hash":0,"ut":0,"params":0,"external_links":0,"webvisor_load_player":"on-your-behalf"},"code_status":"CS_OK","name":null,"permission":"own","monitoring":{"enable_monitoring":0,"enable_sms":0,"sms_time":"9-20;9-20;9-20;9-20;9-20;9-20;9-20","emails":["igor.alexandrov@gmail.com"],"sms_allowed":1},"site":"www.requestbilling.com","id":237991,"type":"simple","owner_login":"igor-alexandrov","code":"<!--
+        Yandex.Metrika counter -->\n<script src=\"\/\/mc.yandex.ru\/metrika\/watch.js\"
+        type=\"text\/javascript\"><\/script>\n<script type=\"text\/javascript\">\ntry
+        { var yaCounter237991 = new Ya.Metrika({id:237991});}\ncatch(e) { }\n<\/script>\n<noscript><div><img
+        src=\"\/\/mc.yandex.ru\/watch\/237991\" style=\"position:absolute; left:-9999px;\"
+        alt=\"\" \/><\/div><\/noscript>\n<!-- \/Yandex.Metrika counter -->"}}'
+    http_version: 
+  recorded_at: Sun, 28 Oct 2012 10:06:08 GMT
+recorded_with: VCR 2.2.5

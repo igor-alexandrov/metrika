@@ -162,6 +162,16 @@ Under development…
    bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-## Copyright
+## Credits
 
-Copyright (c) 2012 [Igor Alexandrov](http://igor-alexandrov.github.com/). See LICENSE for details.
+![JetRockets](http://www.jetrockets.ru/images/logo.png)
+
+Metrika is maintained by [JetRockets](http://www.jetrockets.ru/en).
+
+Contributors:
+
+* [Igor Alexandrov](http://igor-alexandrov.github.com/)
+
+## License
+
+It is free software, and may be redistributed under the terms specified in the LICENSE file.

@@ -164,7 +164,7 @@ Under development…
 
 ## Credits
 
-![JetRockets](http://www.jetrockets.ru/images/logo.png)
+![JetRockets](http://www.jetrockets.ru/public/logo.png)
 
 Metrika is maintained by [JetRockets](http://www.jetrockets.ru/en).
 

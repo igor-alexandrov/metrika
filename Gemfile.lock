@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    metrika (0.2.2)
+    metrika (0.2.3)
       oauth2
       yajl-ruby
 

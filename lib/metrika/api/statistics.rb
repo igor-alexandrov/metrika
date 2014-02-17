@@ -50,6 +50,17 @@ module Metrika
       def counter_stat_geo_path
         "/stat/geo"
       end
+      
+      # Interest
+      def get_counter_stat_interest(id, params = {})
+        params = self.format_params(params)
+
+        self.get(self.counter_stat_interest_path, params.merge(:id => id))
+      end
+
+      def counter_stat_interest_path
+        "/stat/interest"
+      end
 
       # Demography      
       %w( age_gender structure ).each do |report|

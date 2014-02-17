@@ -1,5 +1,12 @@
+PATH
+  remote: .
+  specs:
+    metrika (0.2.0)
+      oauth2
+      yajl-ruby
+
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activesupport (3.2.9)
       i18n (~> 0.6)
@@ -8,34 +15,39 @@ GEM
     bourne (1.1.2)
       mocha (= 0.10.5)
     crack (0.3.1)
-    faraday (0.8.4)
-      multipart-post (~> 1.1)
-    git (1.2.5)
-    httpauth (0.2.0)
+    diff-lcs (1.2.5)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    httpauth (0.2.1)
     i18n (0.6.1)
-    jeweler (1.8.4)
-      bundler (~> 1.0)
-      git (>= 1.2.5)
-      rake
-      rdoc
     json (1.7.5)
-    jwt (0.1.5)
+    jwt (0.1.6)
       multi_json (>= 1.0)
     metaclass (0.0.1)
     mocha (0.10.5)
       metaclass (~> 0.0.1)
     multi_json (1.4.0)
-    multipart-post (1.1.5)
-    oauth2 (0.8.0)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    oauth2 (0.9.2)
       faraday (~> 0.8)
-      httpauth (~> 0.1)
+      httpauth (~> 0.2)
       jwt (~> 0.1.4)
       multi_json (~> 1.0)
+      multi_xml (~> 0.5)
       rack (~> 1.2)
-    rack (1.4.1)
+    rack (1.5.2)
     rake (10.0.2)
     rdoc (3.12)
       json (~> 1.4)
+    rspec (2.14.1)
+      rspec-core (~> 2.14.0)
+      rspec-expectations (~> 2.14.0)
+      rspec-mocks (~> 2.14.0)
+    rspec-core (2.14.7)
+    rspec-expectations (2.14.4)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.14.4)
     shoulda (3.3.2)
       shoulda-context (~> 1.0.1)
       shoulda-matchers (~> 1.4.1)
@@ -47,17 +59,17 @@ GEM
     webmock (1.9.0)
       addressable (>= 2.2.7)
       crack (>= 0.1.7)
-    yajl-ruby (1.1.0)
+    yajl-ruby (1.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.2.1)
-  jeweler (~> 1.8.4)
-  oauth2
-  rdoc (~> 3.12)
+  bundler
+  metrika!
+  rake
+  rdoc
+  rspec
   shoulda
   vcr
   webmock
-  yajl-ruby

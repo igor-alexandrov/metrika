@@ -10,7 +10,7 @@ describe Metrika do
   end
 
   before(:each) do
-    @client = Metrika::Client.new      
+    @client = Metrika::Client.new
   end
 
   context '-- unauthorized' do
@@ -39,9 +39,9 @@ describe Metrika do
     end
   end
 
-  context '#authorization_url' do    
+  context '#authorization_url' do
     it 'should look like authorization url' do
-      @client.authorization_url.should match /\Ahttps:\/\/oauth.yandex.ru\/authorize.+#{APPLICATION_ID}\z/
+      @client.authorization_url.should =~ /\Ahttps:\/\/oauth.yandex.ru\/authorize.+#{APPLICATION_ID}&response_type=code\z/
     end
   end
 
@@ -54,7 +54,7 @@ describe Metrika do
 
     it 'should return a token' do
       @client.restore_token(ACCESS_TOKEN).should_not == nil
-    end 
+    end
 
     it 'should be an instance of OAuth2::AccessToken' do
       @client.restore_token(ACCESS_TOKEN).should be_an_instance_of(OAuth2::AccessToken)

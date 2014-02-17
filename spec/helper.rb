@@ -6,6 +6,9 @@ require 'rspec'
 require 'webmock/rspec'
 require 'vcr'
 
+require 'coveralls'
+Coveralls.wear!
+
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/cassettes'
   c.hook_into(:webmock)
@@ -23,7 +26,7 @@ APPLICATION_PASSWORD = 'fc2f76dc877e41a4a6cbe78d73faff85'
 token_file = File.expand_path('../.access_token', __FILE__)
 if File.exists?(token_file)
   ACCESS_TOKEN = File.read(token_file).strip
-else  
+else
   ACCESS_TOKEN = 'FAKETOKEN'
   puts "You are using a fake access token. You can only use API responds recorded by VCR"
 end

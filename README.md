@@ -1,6 +1,8 @@
-[![Build Status](https://secure.travis-ci.org/igor-alexandrov/metrika.png)](http://travis-ci.org/igor-alexandrov/metrika)
-[![Dependency Status](https://gemnasium.com/igor-alexandrov/metrika.png)](http://gemnasium.com/igor-alexandrov/metrika)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/igor-alexandrov/metrika)
+[![Build Status](https://travis-ci.org/igor-alexandrov/metrika.png)](https://travis-ci.org/igor-alexandrov/metrika)
+[![Code Climate](https://codeclimate.com/github/igor-alexandrov/metrika.png)](https://codeclimate.com/github/igor-alexandrov/metrika)
+[![Coverage Status](https://coveralls.io/repos/igor-alexandrov/metrika/badge.png)](https://coveralls.io/r/igor-alexandrov/metrika)
+[![Dependency Status](https://gemnasium.com/igor-alexandrov/metrika.png)](https://gemnasium.com/igor-alexandrov/metrika)
+[![Gem Version](https://badge.fury.io/rb/metrika.png)](http://badge.fury.io/rb/metrika)
 
 # Metrika
 

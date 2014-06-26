@@ -11,8 +11,8 @@ module Metrika
         @token = (self.client.auth_code.get_token(auth_code) rescue nil)
       end
 
-      def authorization_url
-        self.client.auth_code.authorize_url
+      def authorization_url(options = {})
+        self.client.auth_code.authorize_url(options)
       end
 
       def restore_token(access_token)

@@ -10,7 +10,7 @@ module Metrika
     def format_params(params)  
       params[:date1] = self.format_date(params[:date1]) if params[:date1].present?
       params[:date2] = self.format_date(params[:date2]) if params[:date2].present?
-
+      
       params
     end
 

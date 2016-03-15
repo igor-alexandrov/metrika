@@ -10,7 +10,7 @@ module Metrika
       end
 
       def counters_path
-        "/counters"
+        "/management/v1/counters"
       end
 
       def get_counter(id)
@@ -26,7 +26,7 @@ module Metrika
       end
 
       def counter_path(id)
-        "/counter/#{id}"
+        "/management/v1/counter/#{id}"
       end
 
       def check_counter(id)
@@ -34,7 +34,7 @@ module Metrika
       end
 
       def counter_check_path(id)
-        "/counter/#{id}/check"
+        "/management/v1/counter/#{id}/check"
       end  
     end
   end
